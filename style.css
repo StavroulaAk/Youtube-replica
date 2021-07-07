@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 150px;
+}
+.head-content {
+  display: flex;
+  justify-content: space-between;
+}
+.list {
+  height: 50px;
+  width: 31px;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-top: 1px;
+  opacity: 0.7;
+}
+.logo {
+  height: 50px;
+  width: 90px;
+  margin-top: 3px;
+}
+input {
+  opacity: 0.5;
+  padding: 4px;
+  width: 600px;
+  float: left;
+  margin: 8px;
+  font-size: large;
+}
+
+.mic {
+  height: 20px;
+  opacity: 0.6;
+  margin: 19px;
+  margin-left: 1px;
+}
+
+.header-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+  word-spacing: 20px;
+  margin: 6px;
+}
+.grid {
+  height: 20px;
+}
+.bell {
+  opacity: 0.6;
+  height: 20px;
+}
+.account {
+  border-radius: 50%;
+  margin-right: 30px;
+  height: 30px;
+}
+
+.video-content {
+  background-color: rgb(245, 243, 243);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+video {
+  margin-top: 20px;
+  margin-left: 95px;
+  height: 400px;
+  width: 700px;
+}
+h3,
+p {
+  font-family: "Roboto", sans-serif;
+  margin-left: 125px;
+  font-size: 17px;
+}
+p {
+  font-size: 15px;
+}
+.likes {
+  height: 20px;
+  width: 20px;
+  opacity: 0.5;
+}
+.likes:hover,
+.report:hover,
+.save:hover,
+.share:hover,
+.list:hover,
+.logo:hover,
+.mic:hover,
+.bell:hover,
+.grid:hover,
+.account:hover,
+.comment-likes:hover,
+span:hover {
+  cursor: pointer;
+}
+.like {
+  margin-left: 60px;
+  margin-right: 5px;
+}
+.dislike {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+.share {
+  height: 20px;
+  width: 20px;
+  margin-left: 25px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+.save {
+  opacity: 0.6;
+  margin-left: 25px;
+  margin-right: 5px;
+}
+.report {
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+.under-video {
+  border-bottom: 1px solid rgb(196, 194, 194);
+}
+.account-2 {
+  border-radius: 50%;
+  margin-left: 120px;
+  margin-top: 20px;
+  height: 40px;
+}
+span {
+  margin-left: 13px;
+}
+
+.subscribe {
+  background-color: #cc0000;
+  border: none;
+  height: 35px;
+  width: 120px;
+  margin-left: 288px;
+  color: white;
+  font-weight: bold;
+}
+.subscribe:hover {
+  cursor: pointer;
+}
+.description {
+  margin-left: 176px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.more {
+  font-size: smaller;
+  margin-left: 176px;
+  margin-top: 60px;
+  font-weight: 590;
+}
+.comments {
+  border-bottom: 1px solid rgb(196, 194, 194);
+}
+.sort {
+  height: 15px;
+  width: 25px;
+  margin-left: 30px;
+  opacity: 0.8;
+}
+.aComment,
+.bComment {
+  height: 40px;
+  width: 40px;
+}
+.bComment {
+  margin-top: 20px;
+}
+.new-like {
+  margin-left: 180px;
+}
+.new-dislike {
+  margin-left: 15px;
+}
+.NoLikes {
+  font-size: smaller;
+}
+.comment-likes {
+  height: 15px;
+  width: 15px;
+  opacity: 0.5;
+}
+.myComment {
+  margin-left: 180px;
+  color: rgb(8, 8, 8);
+  font-weight: 1000;
+  margin-right: 550px;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+}
+.side-videos {
+  gap: 3rem 1rem;
+  padding: 3rem 0;
+  margin: 0 1.5rem;
+}
+.video-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-right: 100px;
+}
+.categories {
+  padding-bottom: 5px;
+}
+.category {
+  margin-right: 1rem;
+  /* word-wrap: none;
+  white-space: nowrap; */
+  border: 1px solid rgb(182, 180, 180);
+  border-radius: 800px;
+  padding: 5px 9px;
+  background-color: #e7e7e7;
+  cursor: pointer;
+  transition: background-color 150ms;
+}
+.category:hover {
+  background-color: #ddd;
+}
+.category.active {
+  background-color: #181818;
+  color: white;
+}
+.thumbnail {
+  position: relative;
+  display: flex;
+}
+.thumbnail::before {
+  content: attr(data-duration);
+  position: absolute;
+  background-color: black;
+  color: aliceblue;
+  right: 8px;
+  bottom: 5px;
+  padding: 2px;
+  font-size: smaller;
+}
+.thumbnail-image {
+  height: 90px;
+  width: 155px;
+}
+.video-title {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 12px;
+}
+.video-channel-name {
+  color: rgb(109, 108, 108);
+  text-decoration: none;
+  margin-left: 12px;
+  margin-top: 10px;
+  font-size: smaller;
+}
+.video-metadate {
+  font-size: smaller;
+  color: rgb(109, 108, 108);
+}
+.video-details {
+  display: flex;
+  flex-direction: column;
+}
