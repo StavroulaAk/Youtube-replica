@@ -61,7 +61,7 @@ input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-video {
+iframe {
   margin-top: 20px;
   margin-left: 95px;
   height: 400px;
